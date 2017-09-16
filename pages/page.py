@@ -6,8 +6,8 @@ from selenium.common.exceptions import NoSuchElementException
 
 class Page(object):
 
-    def __init__(self, browser):
-        self.driver = browser.driver
+    def __init__(self, driver):
+        self.driver = driver
         # self.webdriver_handle = browser
 
     def open_web_page(self, url):
