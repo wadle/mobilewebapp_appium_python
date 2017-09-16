@@ -4,7 +4,6 @@ from selenium import webdriver
 
 def pytest_addoption(parser):
     parser.addoption("--plt", action="store", default="mobile", help="Enter platform type i.e web and mobile")
-    # parser.addoption("--mobile", action="store", default="mobile", help="Test cases are run on mobile platform")
 
 
 @pytest.fixture(scope="module", autouse=True)
@@ -28,9 +27,6 @@ def driver(request):
     else:
         print 'only mobile and web plaforms are supported at the moment'
 
-# @pytest.fixture(scope="module")
-# def url(request):
-#     return request.config.getoption("--url")
 
 
 
