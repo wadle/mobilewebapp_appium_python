@@ -1,2 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
+.idea/
+pages/__init__.pyc
+pages/page.pyc
+pages/sm_page.pyc
+tests/__init__.pyc
+tests/__pycache__/
+

@@ -18,7 +18,7 @@ def driver(request):
     elif platform == 'mobile':
         desired_caps={}
         desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '7.1'
+        desired_caps['platformVersion'] = '6.0'
         desired_caps['deviceName'] = 'Android Emulator'
         desired_caps['browserName'] = 'chrome'
         driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
@@ -26,3 +26,4 @@ def driver(request):
         return driver
     else:
         print 'only mobile and web plaforms are supported at the moment'
+

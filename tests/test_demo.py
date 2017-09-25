@@ -10,7 +10,7 @@ class TestDemo:
         :return:
         """
         obj = DemoPage(browser)
-        obj.open_page()
+        obj.open_page_sm_home_page()
 
 
     def test_verify_page_title(self, browser):
@@ -20,7 +20,7 @@ class TestDemo:
         :return:
         """
         obj = DemoPage(browser)
-        obj.open_page()
+        obj.open_page_sm_home_page()
         assert obj.driver.title == "Google"
 
     def test_verify_page_title1(self, browser):
@@ -30,5 +30,5 @@ class TestDemo:
         :return:
         """
         obj = DemoPage(browser)
-        obj.open_page()
+        obj.open_page_sm_home_page()
         assert obj.driver.title == "Google"
